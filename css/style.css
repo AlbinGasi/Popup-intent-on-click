@@ -1,0 +1,244 @@
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-header {
+    background-color: #2371a2;
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.popup-header h1 {
+	margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.popup-header p {
+	
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: auto;
+    width: 750px;
+    position: relative;
+    padding: 2px;
+}
+
+.close {
+    float: right;
+    position: absolute;
+    top: -9px;
+    right: -8px;
+    color: #000;
+    padding: 5px 7px 6px 5px;
+    background: #ffffff;
+    border-radius: 100px;
+    width: 8px;
+    height: 8px;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 11px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-left {
+    float: left;
+    width: 55%;
+    padding: 18px 12px 12px 30px;
+}
+
+.popup-left .content-left {
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.popup-left .content-left .check-img{
+    background-image: url(../images/grey-check.png);
+    width: 18px;
+    height: 12px;
+    display: block;
+    margin: 2px 5px 0px 5px;
+    position: absolute;
+    left: -26px;
+}
+    
+.popup-left .content-left p {
+    display: inline-flex;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    color: #444;
+    position: relative;
+}
+
+.popup-left .content-right {
+    float: right;
+    width: 35%;
+    padding: 10px;
+}
+
+.popup-left .content-right img {
+    width: 90%;
+    object-fit: cover;
+}
+
+.popup-right {
+    width: 39%;
+    min-height: 225px;
+    float: right;
+    padding: 30px 0px 20px 41px;
+    box-sizing: border-box;
+    background: #f0f0f0;
+    position: relative;
+}
+
+.popup-right input {
+    padding: 12px 15px;
+    margin-bottom: 7px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    color: #444;
+}
+.popup-right input:focus,
+.popup-right input:active {
+    box-shadow: 0px 0px 6px #c2c2c2;
+}
+
+.popup-right button {
+	padding: 12px 11px;
+    background: #6bad43;
+    border: 1px solid #6bad43;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.popup-right button:focus {
+	background: #54962c;
+}
+
+.popup-right button:hover {
+	background: #54962c;
+}
+
+.clear-both {
+	clear: both;
+}
+
+.scool-pop {
+    width: 23px;
+    height: 23px;
+    background: #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 449px;
+    top: 216px;
+    z-index: 2;
+}
+
+#openP {
+	padding: 20px 60px;
+    background: #6bad43;
+    border: 1px solid #6bad43;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 30px;
+    display: block;
+    width: 400px;
+    margin: 30px auto;
+}
+
+.error {
+	color: #f20;
+	display: none;
+    font-family: sans-serif;
+}
+.success {
+    color: #919400;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-right: 20px;
+    margin-left: -20px;
+}
+
+#loadingImg {
+    position: absolute;
+    top: 188px;
+    right: -315px;
+    display: none;
+}
+
+#loadingImg img {
+    width: 6%;
+    background: #fff;
+    padding: 4px;
+    border-radius: 40px;
+}
+
+@media (max-height: 500px){
+    .popup {
+        padding-top: 5px;
+    }
+
+@media (max-width: 750px){
+    .popup {
+        padding-top: 5px;
+    }
+    .scool-pop {
+        display: none;
+    }
+    .popup-content{
+        width: 450px;
+    }
+    .popup-left {
+        float: none;
+        width: 100%;
+    }
+    .popup-left .content-left {
+        float: none;
+    }
+    .popup-left .content-right {
+        float: none;
+    }
+    .popup-right {
+        float: none;
+        width: 100%;
+    }
+    .popup-right input {
+        display: block;
+    }
+}
